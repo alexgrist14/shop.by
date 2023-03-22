@@ -1,0 +1,50 @@
+@import "fonts";
+@import "variables";
+
+.header {
+  &-content {
+    text-align: center;
+    padding-top: 80px;
+
+    &__title {
+      font-family: "Open-Sans-SemiBold", sans-serif;
+      color: $primary-text-color;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 35px;;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      width: 250px;
+      font-family: "Open-Sans-Regular", sans-serif;
+      color: $primary-text-color;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      padding-top: 13px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1375px) {
+  .header {
+    &-content {
+      &__title {
+        padding-left: 18px;
+        font-size: 30px;
+        line-height: 41px;
+      }
+
+      &__description {
+        padding-top: 20px;
+        padding-left: 8px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 36px;
+      }
+    }
+  }
+}
